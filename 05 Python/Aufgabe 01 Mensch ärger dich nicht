@@ -1,0 +1,21 @@
+import random
+
+versuche = 0
+ziehen = False
+
+while versuche < 3:
+    wurf = random.randint(1, 6)  
+    print(f"Versuch {versuche + 1}: Du hast eine {wurf} gewürfelt.")
+    
+    if wurf == 6:
+        ziehen = True
+        print("Du darfst ziehen und nochmal würfeln.")
+        versuche += 1  
+        continue  
+    
+    versuche += 1  
+
+if ziehen:
+    print("Du darfst ziehen.")
+else:
+    print("Spieler darf nicht ziehen.")

@@ -1,0 +1,11 @@
+KartenStapel = ("gr7","gl2","+4")
+while len(KartenStapel).count != 0: 
+    print(KartenStapel) 
+    aktuelleKarte = KartenStapel.pop(0)
+
+    if aktuelleKarte == "+4":
+        print("+4 kann gespielt werden.")
+        break
+
+if len (KartenStapel) == 0:
+    print ("Stapel ist leer.") 
