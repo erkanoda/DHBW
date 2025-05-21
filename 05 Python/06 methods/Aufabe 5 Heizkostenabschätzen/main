@@ -1,0 +1,6 @@
+from energiekosten import energiekosten,Auswahl
+
+Auswahl = input("Bitte wählen Sie die Energiequelle (Erdgas, Heizöl, Strom): ")
+energie = float(input("Geben Sie die Energie in kwh ein: "))
+def energiekosten(energie, Auswahl):
+print(f"Die Energiekosten betragen: {energiekosten(energie, Auswahl)} Euro")
